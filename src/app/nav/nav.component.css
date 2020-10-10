@@ -1,3 +1,5 @@
+/* Navigation Styles */
+
 .navbar {
     width: min(100%, 960px);
     margin: auto;
@@ -6,11 +8,18 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    overflow-x: hidden;
+}
+
+.navbar-logo {
+    padding-left: 1rem;
 }
 
 #checkbox {
     display: none;
+}
+
+.menue {
+    width: fit-content;
 }
 
 .navbar-nav {
@@ -37,6 +46,8 @@
 .icon {
     width: 2rem;
     height: 2rem;
+    margin-right: 1rem;
+    padding-top: .5rem;
 }
 
 .navbar a {

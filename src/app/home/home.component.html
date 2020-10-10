@@ -1,1 +1,9 @@
-<p>home works!</p>
+<div class="container">
+    <div class="heroImg"></div>
+</div>
+<div class="container cards">
+    <article class="card" *ngFor='let client of targetClient'>
+        <h3> {{client.client}} </h3>
+        <p> {{client.info}} </p>
+    </article>
+</div>

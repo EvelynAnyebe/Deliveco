@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+#custom
+/database/cloud-sql-secrets.txt
+/database/cloud-sql-465-key.json

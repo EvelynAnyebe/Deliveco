@@ -48,3 +48,4 @@ Thumbs.db
 #custom
 /database/cloud-sql-secrets.txt
 /database/cloud-sql-465-key.json
+/jenkins/secrets.txt

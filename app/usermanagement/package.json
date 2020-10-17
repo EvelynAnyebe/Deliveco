@@ -1,0 +1,19 @@
+{
+  "name": "usermanagement",
+  "version": "1.0.0",
+  "description": "user management service for deliveco",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test",
+    "start": "node app"
+  },
+  "keywords": [
+    "user",
+    "management"
+  ],
+  "author": "Evelyn",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

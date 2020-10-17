@@ -26,14 +26,14 @@
     width: 100%;
     height: auto;
     background-color: var(--dark-green);
-    height: 40vh;
+    height: max(40vh, 300px);
     align-items: center;
 }
 
 .moto .slogan {
     color: aliceblue;
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 36px;
     margin-left: 1.3rem;
     margin-bottom: 2.2rem;
 }

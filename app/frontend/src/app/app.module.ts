@@ -7,6 +7,7 @@ import { ABOUTComponent } from './about/about.component';
 import { CONTACTComponent } from './contact/contact.component';
 import { NAVComponent } from './nav/nav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HOMEComponent,
     ABOUTComponent,
     CONTACTComponent,
-    NAVComponent
+    NAVComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

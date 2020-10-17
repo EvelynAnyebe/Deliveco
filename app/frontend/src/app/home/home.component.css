@@ -1,40 +1,72 @@
+/* global container */
+
 .container {
     width: min(100%);
     margin: auto;
 }
 
-.hero {
-    width: min(100%);
-    margin: auto;
-}
 
-.heroImg {
-    background: url('../../assets/Images/deliveco.png') no-repeat;
-    background-size: cover;
-    object-fit: cover;
+/* her0/image section */
+
+.hero,
+.hero .heroImg {
     width: 100%;
-    padding-top: 50%;
 }
 
-.cards {
+.hero .heroImg {
+    position: relative;
+    display: block;
+    height: auto;
+    object-fit: contain;
+    background-size: cover;
+}
+
+.moto {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: var(--dark-green);
+    height: 40vh;
+    align-items: center;
+}
+
+.moto .slogan {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-left: 1.3rem;
+    margin-bottom: 2.2rem;
+}
+
+
+/* Cards */
+
+.decks {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    padding: 1rem 0rem;
+    padding: 1.5rem 0rem;
+    background-color: rgb(40, 40, 41);
 }
 
-.card {
-    flex: 0 1 min(80%, 200px);
+.deck {
+    flex: 0 1 min(80%, 180px);
     background-color: white;
     margin: .6rem .3rem;
     padding: .8rem .4rem;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 3px 2px 8px 0px rgb(20, 19, 19, .3);
 }
 
-.card h3 {
+.deck h3 {
     color: var( --dark-green);
     text-transform: uppercase;
+    font-size: 14px;
+}
+
+.deck p {
+    font-size: 12px;
+    padding: .1rem;
 }

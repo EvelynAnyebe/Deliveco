@@ -1,3 +1,70 @@
-.navbar .navbar-braand {
-    color: var(--dark-green);
+/*NAvigation bar
+=================== */
+
+.navBar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: var(--dark-green);
+    position: relative;
+}
+
+
+/* navigationlogo */
+
+.navBar-Logo {
+    color: var(--text-color);
+    line-height: 80px;
+    margin-left: 1rem;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+
+/* toggler for mobile menue */
+
+.menue {
+    margin-right: 1rem;
+}
+
+#toggler {
+    display: none;
+}
+
+
+/* toggler functionality */
+
+#toggler:checked~.navBar-nav {
+    transition: transform 300ms ease-in;
+    transform: translateX(0%);
+}
+
+
+/* nav bar ul for home,contact..... */
+
+.navBar-nav {
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(22, 99, 86);
+    z-index: 999999999999;
+    transform: translateX(-100%);
+    transition: transform 800ms ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    display: block;
+}
+
+.nav-link {
+    color: white;
 }

@@ -49,7 +49,7 @@
 /* toggler functionality */
 
 #toggler:checked~.navBar-nav {
-    transition: transform 300ms ease-in;
+    transition: transform 150ms transform 150ms cubic-bezier(.93, -0.38, 1, .18);
     transform: translateX(-100%);
 }
 
@@ -65,7 +65,7 @@
     background-color: rgb(22, 99, 86);
     z-index: 999999999999;
     transform: translateX(-200%);
-    transition: transform 800ms ease-out;
+    transition: transform 300ms cubic-bezier(.29, .95, .09, 1.28);
     display: flex;
     flex-direction: column;
     align-items: center;

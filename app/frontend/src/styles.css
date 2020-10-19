@@ -13,10 +13,7 @@
 :root {
     --light-grey: rgba(167, 157, 157, 0.219);
     --dark-green: rgb(0, 128, 128);
-}
-
-::-webkit-scrollbar {
-    display: none;
+    --text-color: rgb(255, 255, 255);
 }
 
 body {

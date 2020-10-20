@@ -1,0 +1,21 @@
+.signupContainer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signupForm {
+    width: min(90%, 500px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: aqua;
+}
+
+.signupForm>input {
+    margin-bottom: 1rem;
+}

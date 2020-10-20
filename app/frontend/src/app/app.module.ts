@@ -9,6 +9,7 @@ import { NAVComponent } from './nav/nav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { from } from 'rxjs';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -17,15 +18,18 @@ import { from } from 'rxjs';
     ABOUTComponent,
     CONTACTComponent,
     NAVComponent,
-    FooterComponent
+    FooterComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
     RouterModule.forRoot([
       {path: 'home', component: HOMEComponent},
-      {path: 'signup', component: ABOUTComponent},
-      {path: 'login', component: CONTACTComponent}
+      {path: 'about', component: ABOUTComponent},
+      {path: 'login', component: CONTACTComponent},
+      {path: 'signup', component: SignupComponent},
+      {path: '', redirectTo: '/home', pathMatch: 'full'}
     ])
   ],
   providers: [],

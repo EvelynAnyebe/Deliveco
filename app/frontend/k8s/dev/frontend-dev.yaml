@@ -34,10 +34,7 @@ spec:
       containers:
       - name: frontend
         image: - image: gcr.io/primeval-mark-254911/angular-ui:1.0.0
-        resources:
-          limits:
-            memory: "500Mi"
-            cpu: "100m"
+        resources: {}
         imagePullPolicy: Always
         readinessProbe:
           httpGet:

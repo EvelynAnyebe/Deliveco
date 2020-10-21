@@ -3,12 +3,13 @@ kind: Service
 metadata:
   name: angular-ui-frontend
 spec:
+  type: LoadBalancer
   ports:
+  - name: http
     port: 80
-    protocol: TCP
     targetPort: 80
+    protocol: TCP
   selector:
     app: angular-ui
     role: frontend
-  sessionAffinity: None
-  type: LoadBalancer
+  

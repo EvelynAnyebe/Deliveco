@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: angular-ui-frontend-production
+  name: angular-ui-production
 spec:
-  replicas: 
+  replicas: 1 
   selector:
     matchLabels:
-      app: angular-ui-frontend
+      app: angular-ui
       role: frontend
       env: production
   template:
@@ -19,15 +19,11 @@ spec:
     spec:
       containers:
       - image: gcr.io/primeval-mark-254911/angular-ui:1.0.0
-        name: frontend
-        resources: {}
+        name: angular-ui-app
         imagePullPolicy: Always
-        readinessProbe:
-          httpGet:
-            path: /healthz
-            port: 80
         ports:
-        - name: frontend
-          containerPort: 80
-
+        - containerPort: 80
+        env:
+        - name: "PORT"
+          value: 80
 

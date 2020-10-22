@@ -13,7 +13,7 @@ spec:
     metadata:
       name: frontend
       labels:
-        app: angular-ui-frontend
+        app: angular-ui
         role: frontend
         env: production
     spec:

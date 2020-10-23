@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: angular-ui-canary
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: angular-ui
+      role: frontend
+      env: canary
+  template:
+    metadata:
+      name: frontend
+      labels:
+        app: angular-ui
+        role: frontend
+        env: canary
+    spec:
+      containers:
+      - image: gcr.io/primeval-mark-254911/angular-ui:1.0.0
+        name: angular-ui-app
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80

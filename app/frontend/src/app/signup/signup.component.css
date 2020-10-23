@@ -1,4 +1,4 @@
-.loginContainer {
+.signupContainer {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -6,13 +6,13 @@
     align-items: center;
 }
 
-.loginContainer h1 {
+.signupContainer h1 {
     text-align: center;
     text-transform: capitalize;
     color: rgba(122, 214, 30, 0.89);
 }
 
-.loginForm {
+.signupForm {
     width: min(90vw, 600px);
     height: 80vh;
     display: flex;
@@ -23,7 +23,7 @@
     border-radius: 5px;
 }
 
-.loginForm>input {
+.signupForm>input {
     margin-bottom: 1rem;
     border: none;
     padding: .2rem 0 .2rem 1rem;
@@ -32,7 +32,7 @@
     height: 5vh;
 }
 
-.loginForm button {
+.signupForm button {
     background-color: chartreuse;
     padding: .1rem 1rem;
     border: none;

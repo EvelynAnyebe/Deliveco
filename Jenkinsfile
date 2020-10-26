@@ -47,8 +47,8 @@ spec:
       steps {
         container('angular-ui-app') {
           sh """
-            ln -s `pwd` /app/
-            cd /app/
+            ln -s `pwd` /DELIVECO
+            cd /DELIVECO
             ng test
           """
         }

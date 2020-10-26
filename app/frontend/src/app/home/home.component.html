@@ -1,9 +1,15 @@
-<div class="container">
-    <div class="heroImg"></div>
-</div>
-<div class="container cards">
-    <article class="card" *ngFor='let client of targetClient'>
+<section class=" hero">
+    <img class="heroImg" src="../../assets/Images/deliveco.png" alt="" srcset="">
+</section>
+<section class="moto">
+    <div class="slogan">
+        <p>At Deliveco <br> We always deliver</p>
+
+    </div>
+</section>
+<section class=" decks">
+    <article class="deck" *ngFor='let client of targetClient'>
         <h3> {{client.client}} </h3>
         <p> {{client.info}} </p>
     </article>
-</div>
+</section>

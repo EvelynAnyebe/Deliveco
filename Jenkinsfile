@@ -43,12 +43,6 @@ spec:
 }
   }
   stages {
-    stage('Build Image'){
-      steps {
-        container('gcloud') {
-          sh "docker build -t ${IMAGE_TAG} /frontend/."
-        }
-    }
     stage('Test') {
       steps {
         container('angular-ui-app') {
@@ -60,11 +54,10 @@ spec:
         }
       }
     }
-    stage('Push image with Container Builder') {
+    stage('Build and push image with Container Builder') {
       steps {
         container('gcloud') {
-          sh "gcloud auth configure-docker"
-          sh "docker push ${IMAGE_TAG}"
+          sh "PYTHONUNBUFFERED=1 gcloud builds submit -t ${IMAGE_TAG} ."
         }
       }
     }

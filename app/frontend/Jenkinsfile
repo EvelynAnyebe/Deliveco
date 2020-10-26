@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    PROJECT = "REPLACE_WITH_YOUR_PROJECT_ID"
+    PROJECT = "primeval-mark-254911"
     APP_NAME = "angular-ui"
     FE_SVC_NAME = "${APP_NAME}"
     CLUSTER = "cluster-1"

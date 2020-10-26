@@ -1,0 +1,89 @@
+/*NAvigation bar
+=================== */
+
+.navBar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: var(--dark-green);
+    position: relative;
+}
+
+
+/* navigationlogo */
+
+.navBar-Logo {
+    color: var(--text-color);
+    line-height: 80px;
+    margin-left: 1rem;
+    font-size: 18px;
+    font-weight: bolder;
+    height: 100%;
+}
+
+.menue svg {
+    height: 100%;
+    fill: white;
+}
+
+
+/* toggler for mobile menue */
+
+.menue {
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggler {
+    display: none;
+}
+
+
+/* toggler functionality */
+
+#toggler:checked~.navBar-nav {
+    transition: transform 150ms transform 150ms cubic-bezier(.93, -0.38, 1, .18);
+    transform: translateX(-100%);
+}
+
+
+/* nav bar ul for home,contact..... */
+
+.navBar-nav {
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    height: 100vh;
+    width: 50vw;
+    background-color: rgba(31, 34, 33, 0.685);
+    z-index: 999999999999;
+    transform: translateX(-200%);
+    transition: transform 300ms cubic-bezier(.29, .95, .09, 1.28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    display: block;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: aquamarine;
+}
+
+.nav-link:active {
+    color: lightskyblue;
+}

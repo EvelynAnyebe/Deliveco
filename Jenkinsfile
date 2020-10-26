@@ -49,7 +49,6 @@ spec:
           sh """
             ln -s `pwd` /DELIVECO
             cd /DELIVECO
-            ng test
           """
         }
       }

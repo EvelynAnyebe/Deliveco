@@ -17,5 +17,6 @@ kind: Kustomization
 resources:
 - production/frontend-production.yml
 - canary/frontend-canary.yml
+- dev/frontend-dev.yml
 - services/frontend.yml
 

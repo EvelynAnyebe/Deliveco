@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline-color: aquamarine;
+}
+
+:root {
+    --light-grey: rgba(167, 157, 157, 0.219);
+    --dark-green: rgb(0, 128, 128);
+    --text-color: rgb(255, 255, 255);
+    --light-green: #057c7479;
+}
+
+body {
+    background-color: var(--light-grey);
+}
